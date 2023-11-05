@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+ from flask import Flask, render_template, request
 import numpy as np
 import pandas as pd
 from joblib import load
@@ -26,5 +26,5 @@ def hello_world():
         y_pred = model.predict([np_arr])  
         y_pred_to_str = str(y_pred)
         #return predictions_to_str
-        return render_template('index.html', href2='The suitable music for you (age:'+str(myage)+' ,gender:'+str(mygender)+' ,academic qualification:'+str(myquali)+') is:'+y_pred_to_str)
+        return render_template('index.html', href2='The suitable music for you (age:'+str(myage)+', gender:'+str(mygender)+', academic qualification:'+str(myquali)+') is:'+y_pred_to_str)
 
