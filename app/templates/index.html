@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .my_custom_table
+    {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      width: 600px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .my_custom_table td
+    {
+      text-align: left;
+      padding: 4px;
+      background-color:#FFCFCD;
+      width: 200px;
+    }
+    .fit_input
+    {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body style="text-align: center;">
+<h1>Machine Learning - Music Recommender</h1>
+<img src="../static/music.jpg" width="600" style="margin-top:1px; margin-bottom:1px;">
+
+<form method="POST">
+     <table class="my_custom_table" border="1">
+     <tbody>
+      <tr>
+        <td colspan="2"><center><b>Your age:</b></center></td>
+        <td colspan="0.5"><center><input type="number" name="Your_age" min="1" max="99"></center></td>
+      </tr>
+      <tr>
+        <td colspan="2"><center><b>Your gender:</b>
+          <br/>
+          (0 = male, 1 = female)</center></td>
+        <td colspan="0.5"><center><input type="number" name="Your_gender" min="0" max="1"></center></td>
+      </tr>
+      <tr>
+        <td colspan="2"><center><b>Your academic qualification:</b>
+          <br/>
+          (1 = Diploma, 2 = Bachelors, 3 = Masters, 4 = PhD)</center></td>
+        <td colspan="0.5"><center><input type="number" name="Your_quali" min="1" max="4"></center></td>
+      </tr>
+      <tr>
+        <td colspan="2"><center><b>Press the button to see!!</b></center></td>
+        <td colspan="2">
+          <center><input type="submit"></center>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" style="background-color:#6057A2; color:whitesmoke">
+        <center><b>YOUR RESULT</b></center>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" style="background-color:#A8A3CF; height:18px;">
+          <center>{{ href2 }}</center>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+  </form>
+</body>
+</html>
